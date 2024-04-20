@@ -2,6 +2,7 @@
   import { DarkMode } from "flowbite-svelte"
   import { Button } from "flowbite-svelte"
   import { GithubSolid } from "flowbite-svelte-icons"
+  import { ArrowRightOutline } from "flowbite-svelte-icons"
   import { Card } from "flowbite-svelte"
 
   import MemberCount from "../MemberCount.svelte"
@@ -10,6 +11,7 @@
   let SiteTitle = "*Space"
   let SiteDescription =
     "*Space (StarSpace) is an inclusive digital coworking space (currently on Discord) where everyone is welcome to work and meet with others who are interested in getting things done."
+  let SiteSubtitle = "The Best Place to Work, Study, and Play!"
   let GithubURL = "https://github.com/StarspaceGroup/"
   let DiscordInviteURL = "https://discord.gg/xsQC6URzyQ"
 </script>
@@ -34,20 +36,28 @@
       >
         {SiteTitle}
       </h1>
-      <p>
-        <Button
-          href={DiscordInviteURL}
-          color="dark"
-          class="text-2xl duration-1000 bg-[#7289DA] dark:bg-[#7289DA]"
-          target="_blank">Join on Discord</Button
-        >
-      </p>
-      <p>
-        {SiteDescription}
-      </p>
-      <p>
-        Current Member Count: <MemberCount />
-      </p>
+      <div class="md:flex space-x-5">
+        <Card class="text-left place-self-center">
+          <h5
+            class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"
+          >
+            {SiteSubtitle}
+          </h5>
+          <p
+            class="mb-3 font-normal text-gray-700 dark:text-gray-400 leading-tight"
+          >
+            {SiteDescription}
+          </p>
+          <Button href={DiscordInviteURL} class="w-fit place-self-end">
+            Join on Discord <ArrowRightOutline
+              class="w-6 h-6 ms-2 text-white"
+            />
+          </Button>
+        </Card>
+        <p class="p-5">
+          Current Member Count: <MemberCount />
+        </p>
+      </div>
     </div>
   </div>
   <img
