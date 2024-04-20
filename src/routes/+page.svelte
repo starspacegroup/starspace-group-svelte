@@ -2,6 +2,9 @@
   import { DarkMode } from "flowbite-svelte"
   import { Button } from "flowbite-svelte"
   import { GithubSolid } from "flowbite-svelte-icons"
+  import { Card } from "flowbite-svelte"
+
+  import MemberCount from "../MemberCount.svelte"
 
   let StarspaceLogoBackground = "/ai starspace logo transparent bg.png"
   let SiteTitle = "*Space"
@@ -41,6 +44,9 @@
       </p>
       <p>
         {SiteDescription}
+      </p>
+      <p>
+        Current Member Count: <MemberCount />
       </p>
     </div>
   </div>
