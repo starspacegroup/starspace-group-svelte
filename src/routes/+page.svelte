@@ -56,9 +56,12 @@
             />
           </Button>
         </Card>
-        <p class="p-5">
-          Current Member Count: <MemberCount />
-        </p>
+        <div class="p-5 place-content-center">
+          <div>Current Member Count:</div>
+          <div class="text-7xl py-9">
+            <MemberCount />
+          </div>
+        </div>
       </div>
     </div>
   </div>

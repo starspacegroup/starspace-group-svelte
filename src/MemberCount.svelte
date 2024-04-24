@@ -1,5 +1,6 @@
 <script>
   import { onMount } from "svelte"
+  import { Spinner } from "flowbite-svelte"
 
   let memberCount = {}
   let loading = true
@@ -31,9 +32,9 @@
 </script>
 
 {#if loading}
-  <p>Loading...</p>
+  <Spinner size="lg" />
 {:else if errorMessage}
-  <p>Error: {errorMessage}</p>
+  Error: {errorMessage}
 {:else}
   {memberCount}
 {/if}
