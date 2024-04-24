@@ -11,7 +11,7 @@
   let SiteTitle = "*Space"
   let SiteDescription =
     "*Space (StarSpace) is an inclusive digital coworking space (currently on Discord) where everyone is welcome to work around and meet others who are creativity and productivity driven."
-  let SiteSubtitle = "The Best Place to Work, Study, and Play!"
+  let SiteSubtitle = "Work, Create, and Collaborate with Chaos and Fun!"
   let GithubURL = "https://github.com/StarspaceGroup/"
   let DiscordInviteURL = "https://discord.gg/xsQC6URzyQ"
 </script>
