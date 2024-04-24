@@ -3,6 +3,7 @@
   import { Button } from "flowbite-svelte"
   import { GithubSolid } from "flowbite-svelte-icons"
   import { ArrowRightOutline } from "flowbite-svelte-icons"
+  import { DiscordSolid } from "flowbite-svelte-icons"
   import { Card } from "flowbite-svelte"
 
   import MemberCount from "../MemberCount.svelte"
@@ -10,14 +11,14 @@
   let StarspaceLogoImage = "/ai starspace logo transparent bg.png"
   let SiteTitle = "*Space"
   let SiteDescription =
-    "*Space (StarSpace) is an inclusive digital coworking space (currently on Discord) where everyone is welcome to work around and meet others who are creativity and productivity driven."
+    "*Space (StarSpace) is an inclusive digital coworking space (currently on Discord) where everyone is welcome. Work around rock star makers, creators, artists, visionaries, innovators, and trailblazers who are creativity and productivity driven! 🤘 🚀"
   let SiteSubtitle = "Work, Create, and Collaborate with Chaos and Fun!"
   let GithubURL = "https://github.com/StarspaceGroup/"
   let DiscordInviteURL = "https://discord.gg/xsQC6URzyQ"
 </script>
 
 <main
-  class="min-h-svh text-center dark:bg-zinc-950 dark:text-zinc-200 bg-zinc-300 relative overflow-hidden flex h-screen"
+  class="min-h-svh text-center dark:bg-zinc-950 dark:text-zinc-200 bg-zinc-300 relative overflow-hidden flex h-screen select-none"
 >
   <div class="z-20 relative m-auto">
     <nav
@@ -39,26 +40,29 @@
         {SiteTitle}
       </h1>
       <div class="md:flex space-x-5">
-        <Card class="text-left place-self-center">
+        <Card class="text-left place-self-center !bg-opacity-20 !bg-black">
           <h5
-            class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"
+            class="mb-4 mt-2 text-2xl font-bold tracking-tight text-gray-950 dark:text-white"
           >
             {SiteSubtitle}
           </h5>
           <p
-            class="mb-3 font-normal text-gray-700 dark:text-gray-400 leading-tight"
+            class="mb-3 font-normal text-gray-950 dark:text-gray-400 leading-tight"
           >
             {SiteDescription}
           </p>
-          <Button href={DiscordInviteURL} class="w-fit place-self-end">
-            Join on Discord <ArrowRightOutline
+          <Button
+            href={DiscordInviteURL}
+            class="w-fit place-self-end text-xl mt-3 bg-[#454FBF] dark:bg-[#454FBF] hover:bg-[#5865F2] dark:hover:bg-[#5865F2] text-white"
+          >
+            Join on <DiscordSolid class="mx-2" /> Discord <ArrowRightOutline
               class="w-6 h-6 ms-2 text-white"
             />
           </Button>
         </Card>
         <div class="p-5 place-content-center">
-          <div>Current Member Count:</div>
-          <div class="text-7xl py-9">
+          <div class="text-3xl font-light">Current Member Count:</div>
+          <div class="text-8xl font-light py-9">
             <MemberCount />
           </div>
         </div>
