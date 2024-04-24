@@ -34,7 +34,7 @@
 {#if loading}
   <Spinner size="lg" />
 {:else if errorMessage}
-  Error: {errorMessage}
+  ?
 {:else}
   {memberCount}
 {/if}
