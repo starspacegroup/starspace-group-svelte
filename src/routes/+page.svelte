@@ -7,10 +7,10 @@
 
   import MemberCount from "../MemberCount.svelte"
 
-  let StarspaceLogoBackground = "/ai starspace logo transparent bg.png"
+  let StarspaceLogoImage = "/ai starspace logo transparent bg.png"
   let SiteTitle = "*Space"
   let SiteDescription =
-    "*Space (StarSpace) is an inclusive digital coworking space (currently on Discord) where everyone is welcome to work and meet with others who are interested in getting things done."
+    "*Space (StarSpace) is an inclusive digital coworking space (currently on Discord) where everyone is welcome to work around and meet others who are creativity and productivity driven."
   let SiteSubtitle = "The Best Place to Work, Study, and Play!"
   let GithubURL = "https://github.com/StarspaceGroup/"
   let DiscordInviteURL = "https://discord.gg/xsQC6URzyQ"
@@ -32,8 +32,10 @@
     </nav>
     <div class="p-8 text-2xl space-y-4 max-w-4xl mx-auto grid">
       <h1
-        class="text-7xl md:text-9xl font-bold mb-12 text-zinc-100 hover:text-zinc-800 dark:text-zinc-800 dark:hover:text-zinc-100 duration-1000"
+        class="text-7xl md:text-9xl font-bold mb-12 duration-1000 flex gap-9 place-content-center bg-clip-text bg-gradient-to-tr from-primary-500 to-secondary-500"
       >
+        <img src={StarspaceLogoImage} alt="" class="h-32" />
+
         {SiteTitle}
       </h1>
       <div class="md:flex space-x-5">
@@ -61,7 +63,7 @@
     </div>
   </div>
   <img
-    src={StarspaceLogoBackground}
+    src={StarspaceLogoImage}
     alt=""
     class="absolute -left-1/3 -top-1/3 z-10 blur-[9rem]"
   />
