@@ -9,7 +9,7 @@
   import MemberCount from "../MemberCount.svelte"
 
   const StarspaceLogoImage = "/ai starspace logo transparent bg.png"
-  const StarsOnSpaceImage = "/stars_on_black_background.png"
+  const StarsOnSpaceImage = "/stars_on_black_background.jpeg"
   const SiteTitle = "*Space"
   const SiteDescription =
     "*Space (StarSpace) is an inclusive digital coworking space (currently on Discord) where everyone is welcome. Work around rock star makers, creators, artists, visionaries, innovators, and trailblazers who are creativity and productivity driven! 🤘 🚀"
@@ -33,19 +33,22 @@
       </a>
     </nav>
     <div class="p-8 text-2xl space-y-4 max-w-4xl mx-auto grid">
-      <h1
-        class="text-7xl md:text-9xl font-bold mb-12 duration-1000 md:flex gap-9 place-content-center bg-clip-text bg-gradient-to-tr from-primary-500 to-secondary-500 text-center items-center"
-      >
+      <div class="md:flex gap-9 place-content-center">
         <img
           src={StarspaceLogoImage}
           alt="*Space Logo"
           class="h-32 mx-auto md:mx-0"
         />
-
-        {SiteTitle}
-      </h1>
+        <h1
+          class="text-7xl md:text-9xl font-bold mb-12 duration-1000 bg-clip-text text-transparent bg-[url('{StarsOnSpaceImage}')] dark:text-white bg-cover pb-5 text-center items-center"
+        >
+          {SiteTitle}
+        </h1>
+      </div>
       <div class="md:flex space-x-5">
-        <Card class="text-left place-self-center !bg-opacity-20 !bg-black">
+        <Card
+          class="text-left place-self-center !bg-opacity-20 !bg-white dark:!bg-black dark:!bg-opacity-20"
+        >
           <h5
             class="mb-4 mt-2 text-2xl font-bold tracking-tight text-gray-950 dark:text-white"
           >
