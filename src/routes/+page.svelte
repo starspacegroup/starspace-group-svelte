@@ -8,9 +8,10 @@
 
   import MemberCount from "../MemberCount.svelte"
 
-  let StarspaceLogoImage = "/ai starspace logo transparent bg.png"
-  let SiteTitle = "*Space"
-  let SiteDescription =
+  const StarspaceLogoImage = "/ai starspace logo transparent bg.png"
+  const StarsOnSpaceImage = "/stars_on_black_background.png"
+  const SiteTitle = "*Space"
+  const SiteDescription =
     "*Space (StarSpace) is an inclusive digital coworking space (currently on Discord) where everyone is welcome. Work around rock star makers, creators, artists, visionaries, innovators, and trailblazers who are creativity and productivity driven! 🤘 🚀"
   let SiteSubtitle = "Work, Create, and Collaborate with Chaos and Fun!"
   let GithubURL = "https://github.com/StarspaceGroup/"
@@ -18,7 +19,7 @@
 </script>
 
 <main
-  class="min-h-svh text-center dark:bg-zinc-950 dark:text-zinc-200 bg-zinc-300 relative overflow-hidden flex h-screen select-none"
+  class="min-h-screen text-center dark:bg-zinc-950 dark:text-zinc-200 bg-zinc-300 relative overflow-hidden flex select-none"
 >
   <div class="z-20 relative m-auto">
     <nav
@@ -33,9 +34,13 @@
     </nav>
     <div class="p-8 text-2xl space-y-4 max-w-4xl mx-auto grid">
       <h1
-        class="text-7xl md:text-9xl font-bold mb-12 duration-1000 flex gap-9 place-content-center bg-clip-text bg-gradient-to-tr from-primary-500 to-secondary-500"
+        class="text-7xl md:text-9xl font-bold mb-12 duration-1000 md:flex gap-9 place-content-center bg-clip-text bg-gradient-to-tr from-primary-500 to-secondary-500 text-center items-center"
       >
-        <img src={StarspaceLogoImage} alt="" class="h-32" />
+        <img
+          src={StarspaceLogoImage}
+          alt="*Space Logo"
+          class="h-32 mx-auto md:mx-0"
+        />
 
         {SiteTitle}
       </h1>
