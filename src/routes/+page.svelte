@@ -40,7 +40,7 @@
           class="h-32 mx-auto md:mx-0"
         />
         <h1
-          class="text-7xl md:text-9xl font-bold mb-12 duration-1000 bg-clip-text text-transparent bg-[url('{StarsOnSpaceImage}')] dark:text-white bg-cover pb-5 text-center items-center"
+          class="text-7xl md:text-9xl font-bold mb-12 duration-1000 bg-clip-text text-transparent bg-[url('/stars_on_black_background.jpeg')] dark:text-white bg-cover pb-5 text-center items-center"
         >
           {SiteTitle}
         </h1>
