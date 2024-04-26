@@ -23,7 +23,10 @@ const config = {
     }
   },
 
-  plugins: [require('flowbite/plugin')],
+  plugins: [
+    require('flowbite/plugin'),
+    require('tailwindcss-3d'),
+  ],
 };
 
 module.exports = config;
