@@ -82,4 +82,9 @@
     alt=""
     class="absolute -left-1/3 -top-1/3 z-10 blur-[9rem]"
   />
+  <img
+    src={StarsOnSpaceImage}
+    alt=""
+    class="absolute top-0 left-0 z-9 bg-cover w-screen h-screen dark:opacity-20 opacity-0 duration-1000"
+  />
 </main>
