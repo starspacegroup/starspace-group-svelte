@@ -32,8 +32,8 @@
         <GithubSolid size="xl" />
       </a>
     </nav>
-    <div class="p-8 text-2xl space-y-4 max-w-4xl mx-auto grid">
-      <div class="md:flex gap-9 place-content-center">
+    <div class="p-8 text-2xl md:space-y-4 max-w-4xl mx-auto grid">
+      <div class="md:flex md:gap-9 place-content-center">
         <img
           src={StarspaceLogoImage}
           alt="*Space Logo"
@@ -45,7 +45,7 @@
           {SiteTitle}
         </h1>
       </div>
-      <div class="md:flex space-x-5">
+      <div class="md:flex md:space-x-5">
         <Card
           class="text-left place-self-center !bg-opacity-20 !bg-white dark:!bg-black dark:!bg-opacity-20"
         >
