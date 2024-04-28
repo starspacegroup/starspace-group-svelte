@@ -27,7 +27,7 @@
 </script>
 
 <div class="p-8 text-2xl md:space-y-4 max-w-4xl mx-auto grid">
-  <div class="md:grid grid-cols-2 md:gap-4">
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
     {#each projects as project}
       <Card class="!bg-opacity-50 relative">
         <h5
