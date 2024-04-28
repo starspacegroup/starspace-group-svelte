@@ -11,7 +11,7 @@
 >
   <div class="z-30 relative">
     <Navigation />
-    <div class="pt-10">
+    <div class="pt-24">
       <a href="/">
         <MainTitle />
       </a>
