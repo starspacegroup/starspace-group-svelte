@@ -10,7 +10,7 @@
   async function fetchMemberCount() {
     try {
       if (dev) {
-        memberCount = 9999
+        memberCount = 69420
         loading = false
       } else {
         const response = await fetch(
