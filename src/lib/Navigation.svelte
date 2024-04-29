@@ -5,7 +5,7 @@
 </script>
 
 <nav
-  class="p-5 text-right fixed w-full top-0 left-0 flex items-center justify-end space-x-6"
+  class="p-5 text-right sticky w-full top-0 left-0 flex items-center justify-end space-x-6"
 >
   <a
     href="/"
