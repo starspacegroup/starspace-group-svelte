@@ -11,5 +11,8 @@
 </svelte:head>
 
 <div>
+  <h2 class="text-2xl">
+    Some of the cool things made the the people working in *Space:
+  </h2>
   <ProjectsDirectory />
 </div>
