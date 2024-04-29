@@ -12,7 +12,7 @@
 
 <div>
   <h2 class="text-2xl">
-    Some of the cool things made the the people working in *Space:
+    Some of the cool things made by the rock stars working in *Space:
   </h2>
   <ProjectsDirectory />
 </div>
