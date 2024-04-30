@@ -26,7 +26,7 @@
     {
       name: "Reddisco.win",
       description:
-        "A web utility to make sharing Discord invite links on Reddit faster. Takes an invite link as input, fetches the description of the server from Discord as the post title, then offers edits to the title using AI. The provided link and title are auto filled by clicking the button(s) for a handful of subreddit(s).",
+        "A web utility to make sharing Discord invite links on Reddit faster. Takes an invite link as input, fetches the description of the server from Discord as the post title, then offers edits to the title using AI. The provided link and title are auto filled by clicking the subreddit buttons.",
       url: "https://reddisco.win",
       external: true,
       tags: [
