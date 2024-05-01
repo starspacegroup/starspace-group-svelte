@@ -17,9 +17,7 @@
   }
 </script>
 
-<main
-  class="min-h-svh dark:bg-zinc-950 dark:text-zinc-200 bg-zinc-300 select-none"
->
+<main class="h-lvh select-none p-0 text-white">
   <div class="text-2xl text-center p-3">
     Counter: {count}
     <button on:click={() => (isPopped = [])} class="rounded-xl bg-red-800 p-3"
@@ -27,7 +25,7 @@
     >
   </div>
   <div class="main">
-    <div class="container select-none">
+    <div class="hextainer select-none">
       {#each elements as i}
         <div
           class="box !bg-amber-700 !text-center !text-2xl flex !items-center !align-center text-white cursor-pointer"
@@ -41,7 +39,10 @@
   </div>
 </main>
 
-<style>
+<style lang="postcss">
+  :global(body) {
+    @apply !bg-black;
+  }
   .main {
     display: flex;
     --s: 100px; /* size  */
@@ -49,11 +50,11 @@
     --f: calc(1.732 * var(--s) + 4 * var(--m) - 1px);
   }
 
-  .container {
+  .hextainer {
     font-size: 0; /*disable white space between inline block element */
   }
 
-  .container div {
+  .hextainer div {
     width: var(--s);
     margin: var(--m);
     height: calc(var(--s) * 1.1547);
@@ -63,7 +64,7 @@
     clip-path: polygon(0% 25%, 0% 75%, 50% 100%, 100% 75%, 100% 25%, 50% 0%);
     margin-bottom: calc(var(--m) - var(--s) * 0.2885);
   }
-  .container::before {
+  .hextainer::before {
     content: "";
     width: calc(var(--s) / 2 + var(--m));
     float: left;
