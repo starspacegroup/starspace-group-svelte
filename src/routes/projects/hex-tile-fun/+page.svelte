@@ -20,8 +20,12 @@
 <main class="h-lvh select-none p-0 text-white">
   <div class="text-2xl text-center p-3">
     Counter: {count}
-    <button on:click={() => (isPopped = [])} class="rounded-xl bg-red-800 p-3"
-      >Reset</button
+    <button
+      on:click={() => {
+        isPopped = []
+        count = 0
+      }}
+      class="rounded-xl bg-red-800 p-3">Reset</button
     >
   </div>
   <div class="main">
