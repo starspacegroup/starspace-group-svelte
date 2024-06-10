@@ -8,11 +8,6 @@
   class="p-5 text-right sticky w-full top-0 left-0 flex items-center justify-end space-x-6"
 >
   <a
-    href="/"
-    class="rounded dark:border-cyan-100 border-cyan-950 border-2 p-3 border-opacity-10 dark:border-opacity-10"
-    >Server Info</a
-  >
-  <a
     href="/projects"
     class="rounded dark:border-cyan-100 border-cyan-950 border-2 p-3 border-opacity-10 dark:border-opacity-10"
     >Projects</a
