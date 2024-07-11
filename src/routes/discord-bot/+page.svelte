@@ -13,7 +13,6 @@
       usage: "/insult [User?]",
     },
   ]
-  import Navigation from "$lib/Navigation.svelte"
   import { DarkMode } from "flowbite-svelte"
   import "../../app.pcss"
 </script>
@@ -23,7 +22,7 @@
     class="text-primary-500 dark:text-primary-600 border dark:border-gray-800 bg-zinc-950 dark:bg-zinc-200 text-xl absolute top-12 right-12"
   />
 
-  <h1 class="text-9xl">*Space Discord Bot</h1>
+  <h1 class="text-4xl md:text-9xl">*Space Discord Bot</h1>
   <p class="m-9 text-3xl">
     A bot to enforce rules, provide tools, and make fun happen in *Space
   </p>
