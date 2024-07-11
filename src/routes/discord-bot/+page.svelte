@@ -18,7 +18,7 @@
   import "../../app.pcss"
 </script>
 
-<div class="p-14 dark:bg-zinc-950 dark:text-zinc-200 bg-zinc-300">
+<div class="p-14 dark:bg-zinc-950 dark:text-zinc-200 bg-zinc-300 min-h-svh">
   <DarkMode
     class="text-primary-500 dark:text-primary-600 border dark:border-gray-800 bg-zinc-950 dark:bg-zinc-200 text-xl absolute top-12 right-12"
   />
