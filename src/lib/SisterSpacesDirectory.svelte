@@ -11,7 +11,7 @@
     {
       name: "Arete.study",
       description:
-        "A safe maker space in Ukraine with a wide range of equipment and tools for fabrication using wood, metal, and more. Lathe/milling/CNClaser, 3d printing, power-tools, woodworking, embedded systems BGA/SMD soldering, carbon\fiber glass framing",
+        "This makerspace is a cutting-edge facility equipped with a wide range of tools for creators of all skill levels. It features high-precision lathe, milling, CNC, and laser machines, along with 3D printing capabilities and a dedicated woodworking section with power tools. Additionally, the space supports advanced electronics work with embedded systems, BGA/SMD soldering stations, and offers carbon and fiberglass framing resources for complex projects.",
       url: "https://arete.study/",
       physical: true,
       image_url: "/arete-study-image.jpg",
