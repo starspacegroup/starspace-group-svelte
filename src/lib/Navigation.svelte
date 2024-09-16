@@ -12,6 +12,11 @@
     class="rounded dark:border-cyan-100 border-cyan-950 border-2 p-3 border-opacity-10 dark:border-opacity-10"
     >Projects</a
   >
+  <a
+    href="/sister-spaces"
+    class="rounded dark:border-cyan-100 border-cyan-950 border-2 p-3 border-opacity-10 dark:border-opacity-10"
+    >Sister Spaces</a
+  >
   <DarkMode
     class="text-primary-500 dark:text-primary-600 border dark:border-gray-800 bg-zinc-950 dark:bg-zinc-200 text-xl"
   />
