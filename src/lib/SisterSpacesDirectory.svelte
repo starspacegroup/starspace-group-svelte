@@ -11,7 +11,7 @@
     {
       name: "Arete.study",
       description:
-        "A safe maker space in Ukraine with a wide range of equipment and tools for fabrication using wood, metal, and more.",
+        "A safe maker space in Ukraine with a wide range of equipment and tools for fabrication using wood, metal, and more. Lathe/milling/CNClaser, 3d printing, power-tools, woodworking, embedded systems BGA/SMD soldering, carbon\fiber glass framing",
       url: "https://arete.study/",
       physical: true,
       image_url: "/arete-study-image.jpg",
