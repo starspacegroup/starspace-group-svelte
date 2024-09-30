@@ -2,8 +2,6 @@
   import "../../app.pcss"
   import Navigation from "$lib/Navigation.svelte"
   import MainTitle from "$lib/MainTitle.svelte"
-  const StarspaceLogoImage = "/ai starspace logo transparent bg.png"
-  const StarsOnSpaceImage = "/stars_on_black_background.jpeg"
 </script>
 
 <main
@@ -18,13 +16,13 @@
     </div>
     <slot class="" />
   </div>
-  <img
-    src={StarspaceLogoImage}
+  <enhanced:img
+    src="$lib/images/ai starspace logo transparent bg.png"
     alt=""
     class="fixed -left-1/3 -top-1/3 z-10 blur-[9rem]"
   />
-  <img
-    src={StarsOnSpaceImage}
+  <enhanced:img
+    src="$lib/images/stars_on_black_background.jpeg"
     alt=""
     class="fixed top-0 left-0 z-9 bg-cover w-screen h-screen dark:opacity-20 opacity-0 duration-1000"
   />
