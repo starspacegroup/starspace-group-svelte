@@ -2,6 +2,7 @@
   import "../../app.pcss"
   import Navigation from "$lib/Navigation.svelte"
   import MainTitle from "$lib/MainTitle.svelte"
+  import Footer from "$lib/Footer.svelte"
 </script>
 
 <main
@@ -16,6 +17,7 @@
     </div>
     <slot class="" />
   </div>
+  <Footer giveClasses="z-30 relative" />
   <enhanced:img
     src="$lib/images/ai starspace logo transparent bg.png"
     alt=""
