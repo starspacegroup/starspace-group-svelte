@@ -45,7 +45,7 @@
       external: true,
       tags: [
         { title: "Solar Hackathon 2024", color: "yellow" },
-        { title: "Made at *Space", color: "orange" },
+        { title: "Made at *Space", color: "red" },
         { title: "Sveltekit", color: "green" },
         { title: "Cloudflare Pages", color: "green" },
       ],
