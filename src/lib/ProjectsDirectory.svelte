@@ -69,6 +69,61 @@
         { title: "QT", color: "green" },
       ],
     },
+    {
+      name: "Game",
+      description: "A multiplayer arcade puzzle game where you navigate a seamless sphere world, convert hostile ships into allied satellites, solve node alignment puzzles, and collect power-ups like shields and speed boosts—alone or together in real-time.",
+      url: "https://game.starspace.group/",
+      external: true,
+      screenshot: "/game-screenshot.png",
+      tags: [
+        { title: "Made at *Space", color: "red" },
+      ],
+    },
+    {
+      name: "Athena",
+      description: "An open-source governance interface for any DAO using the *Space model. Create and vote on proposals, view token holder stats, and manage on-chain governance—all through a clean, deployable UI.",
+      url: "https://athena.starspace.group/",
+      external: true,
+      screenshot: "/athena-screenshot.png",
+      tags: [
+        { title: "Made at *Space", color: "red" },
+      ],
+    },
+    {
+      name: "NebulaKit",
+      description: "A production-ready SvelteKit + Cloudflare Workers starter template. Includes authentication, command palette, adaptive theming, D1 database, AI voice/text chat, TDD setup with Vitest and Playwright, and GitHub Copilot instructions.",
+      url: "https://nebulakit.starspace.group/",
+      external: true,
+      screenshot: "/nebulakit-screenshot.png",
+      tags: [
+        { title: "Made at *Space", color: "red" },
+        { title: "Sveltekit", color: "green" },
+        { title: "Cloudflare Workers", color: "green" },
+      ],
+    },
+    {
+      name: "Hermes",
+      description: "An eCommerce platform to create your own online store in minutes. Features AI-powered store builder, beautiful responsive designs, secure checkout with credit card and crypto, and a zero-monthly-fee revenue share pricing model.",
+      url: "https://hermes.starspace.group/",
+      external: true,
+      screenshot: "/hermes-screenshot.png",
+      tags: [
+        { title: "Made at *Space", color: "red" },
+        { title: "Sveltekit", color: "green" },
+        { title: "Cloudflare Workers", color: "green" },
+      ],
+    },
+    {
+      name: "Trill Symbiont",
+      description: "A shared generative ambient music experience featuring a drum sequencer, physics-based visualization synced to tempo, Circle of Fifths key synchronization, and an interactive music grid with oscillator controls and evolutionary patterns.",
+      url: "https://trill-symbiont.starspace.group/",
+      external: true,
+      screenshot: "/trill-symbiont-screenshot.png",
+      tags: [
+        { title: "Made at *Space", color: "red" },
+        { title: "Web Audio API", color: "green" },
+      ],
+    },
   ]
 </script>
 
