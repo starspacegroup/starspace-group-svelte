@@ -2,9 +2,30 @@
   import { Button, Card } from "flowbite-svelte"
   import { ArrowUpRightFromSquareOutline } from "flowbite-svelte-icons"
   import { Badge } from "flowbite-svelte"
-  import { get } from "svelte/store"
 
-  const projects = [
+  type BadgeColor =
+    | "none"
+    | "primary"
+    | "blue"
+    | "green"
+    | "red"
+    | "yellow"
+    | "pink"
+    | "purple"
+    | "indigo"
+    | "dark"
+
+  interface Project {
+    name: string
+    description: string
+    url: string
+    external?: boolean
+    logo?: string
+    screenshot?: string
+    tags?: Array<{ title: string; color: BadgeColor }>
+  }
+
+  const projects: Project[] = [
     // {
     //   name: "Physics and Audio",
     //   description:

@@ -7,7 +7,30 @@
   } from "flowbite-svelte-icons"
   import { Badge } from "flowbite-svelte"
 
-  const sister_spaces = [
+  type BadgeColor =
+    | "none"
+    | "primary"
+    | "blue"
+    | "green"
+    | "red"
+    | "yellow"
+    | "pink"
+    | "purple"
+    | "indigo"
+    | "dark"
+
+  interface SisterSpace {
+    name: string
+    description: string
+    url: string
+    physical: boolean
+    image_url: string
+    map_url: string
+    address: string
+    tags?: Array<{ title: string; color: BadgeColor }>
+  }
+
+  const sister_spaces: SisterSpace[] = [
     {
       name: "Arete.study",
       description:

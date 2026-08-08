@@ -14,12 +14,14 @@
   }
 </script>
 
-<div
+<button
+	type="button"
   class="box !bg-amber-700 !text-center !text-2xl flex !items-center !align-center text-white cursor-pointer"
   class:!bg-opacity-0={isPopped}
   on:click={pop}
+  aria-pressed={isPopped}
 >
   <p class="!my-auto !mt-10">
     {JSON.stringify(isPopped)}
   </p>
-</div>
+</button>

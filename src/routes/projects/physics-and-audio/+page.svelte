@@ -25,7 +25,7 @@
   }
 </script>
 
-<a href="#" on:click={playCNote}>Play C Note</a>
+<button type="button" on:click={playCNote}>Play C Note</button>
 
 <PE.World gravity={[0, -9.81, 0]}>
   <PE.Body mass={1} bind:position>
