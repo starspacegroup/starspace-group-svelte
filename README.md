@@ -7,7 +7,7 @@ Everything you need to build a Svelte project, powered by [`create-svelte`](http
 - Fork repo to your account
 - Clone your fork of the repo
 - Copy .env-example to .env
-- Install dependencies with `yarn install`, start a development server:
+- Install dependencies with `npm install`, then start a development server:
 
 ```bash
 npm run dev

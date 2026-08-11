@@ -9,7 +9,7 @@
     "check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
     "check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
     "deploy": "npm run build && wrangler pages deploy .svelte-kit/cloudflare",
-    "build-cf-types": "wrangler types && move worker-configuration.d.ts src/"
+    "build-cf-types": "wrangler types src/worker-configuration.d.ts"
   },
   "devDependencies": {
     "@cloudflare/workers-types": "^4.20240909.0",
@@ -18,9 +18,9 @@
     "@sveltejs/enhanced-img": "^0.3.8",
     "@sveltejs/kit": "^2.5.27",
     "@sveltejs/vite-plugin-svelte": "^3.1.2",
+    "@types/three": "^0.168.0",
     "autoprefixer": "^10.4.20",
     "cannon-es": "^0.20.0",
-    "discord.js": "^14.16.2",
     "flowbite": "^2.5.1",
     "flowbite-svelte": "^0.46.0",
     "flowbite-svelte-icons": "^1.5.0",
@@ -41,6 +41,5 @@
   "type": "module",
   "dependencies": {
     "tailwind-merge": "^2.5.2"
-  },
-  "packageManager": "yarn@1.22.22"
+  }
 }

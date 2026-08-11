@@ -1,4 +1,4 @@
-export const nodeToIndex = (node) => {
+export const nodeToIndex = (node: string) => {
   let result = 0
   nodes.forEach((n, i) => {
     if (n.node === node) {
