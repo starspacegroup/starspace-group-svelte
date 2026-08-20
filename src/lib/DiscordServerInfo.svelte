@@ -5,10 +5,10 @@
   import { Card } from "flowbite-svelte"
 
   import MemberCount from "$lib/MemberCount.svelte"
+  import { DISCORD_INVITE } from "$lib/seo/site"
   const SiteDescription =
     "*Space (StarSpace) is an inclusive digital coworking space (currently on Discord) where everyone is welcome. Work around rock star makers, creators, artists, visionaries, innovators, and trailblazers who are creativity and productivity driven! 🤘 🚀"
-  let SiteSubtitle = "Work, Create, and Collaborate with Chaos and Fun!"
-  let DiscordInviteURL = "https://discord.gg/xsQC6URzyQ"
+  const SiteSubtitle = "Work, Create, and Collaborate with Chaos and Fun!"
 </script>
 
 <div class="p-8 text-2xl md:space-y-4 max-w-4xl mx-auto grid">
@@ -27,7 +27,7 @@
         {SiteDescription}
       </p>
       <Button
-        href={DiscordInviteURL}
+        href={DISCORD_INVITE}
         class="w-fit place-self-end text-xl mt-3 bg-[#454FBF] dark:bg-[#454FBF] hover:bg-[#5865F2] dark:hover:bg-[#5865F2] text-white"
       >
         Join on <DiscordSolid class="mx-2" /> Discord <ArrowRightOutline

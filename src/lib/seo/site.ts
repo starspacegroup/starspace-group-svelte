@@ -23,7 +23,16 @@ export const OG_IMAGE_HEIGHT = 630
 export const OG_IMAGE_TYPE = "image/png"
 export const DEFAULT_OG_IMAGE_ALT = `${SITE_NAME} — coworking on Discord`
 
-export const DISCORD_INVITE = "https://discord.gg/xsQC6URzyQ"
+// The invite code lived in three places — here, the join button in
+// DiscordServerInfo.svelte and the member-count fetch in MemberCount.svelte.
+// Now it lives here and the other two ask for it.
+export const DISCORD_INVITE_CODE = "xsQC6URzyQ"
+export const DISCORD_INVITE = `https://discord.gg/${DISCORD_INVITE_CODE}`
+// Public, unauthenticated and CORS-open, so the browser calls it directly with
+// no server hop. Pinned to v10: an unversioned /api/ route floats to the oldest
+// version Discord still supports, which is the one they retire first.
+export const DISCORD_INVITE_API =
+  `https://discord.com/api/v10/invites/${DISCORD_INVITE_CODE}?with_counts=true`
 
 // The accounts SocialIcons.svelte actually links. X is deliberately left out:
 // that link is commented out there too. To have X credit posts to the account,
