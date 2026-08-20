@@ -11,6 +11,8 @@
 />
 
 <div>
-  <p class="text-2xl">Physical locations that have partnered with us:</p>
+  <p class="mx-auto max-w-5xl px-4 text-xl sm:px-6 sm:text-2xl">
+    Physical locations that have partnered with us:
+  </p>
   <SisterSpacesDirectory />
 </div>

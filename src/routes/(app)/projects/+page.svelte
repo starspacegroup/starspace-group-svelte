@@ -11,7 +11,7 @@
 />
 
 <div>
-  <h2 class="text-2xl">
+  <h2 class="mx-auto max-w-7xl px-4 text-xl sm:px-6 sm:text-2xl">
     Some of the cool things made by the rock stars working in *Space:
   </h2>
   <ProjectsDirectory />
