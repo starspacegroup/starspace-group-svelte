@@ -1,0 +1,7 @@
+# Link-preview scrapers (Discord, Slack, X, Facebook, LinkedIn, Bluesky,
+# Telegram, WhatsApp) fetch pages as ordinary bots. Blocking them here is the
+# usual reason a share card silently stops rendering — leave this open.
+User-agent: *
+Allow: /
+
+Sitemap: https://starspace.group/sitemap.xml

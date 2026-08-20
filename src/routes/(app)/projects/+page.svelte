@@ -1,14 +1,14 @@
 <script>
   import ProjectsDirectory from "$lib/ProjectsDirectory.svelte"
+  import Seo from "$lib/Seo.svelte"
 </script>
 
-<svelte:head>
-  <title>*Space - Projects</title>
-  <meta
-    name="description"
-    content="Check out some of the projects made by people working in *Space."
-  />
-</svelte:head>
+<Seo
+  title="Projects"
+  description="Cool things made by the rock stars working in *Space — apps, games, tools and experiments built by our members."
+  image="/og/projects.png"
+  imageAlt="*Space — projects made by our members"
+/>
 
 <div>
   <h2 class="text-2xl">

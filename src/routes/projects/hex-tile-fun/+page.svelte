@@ -1,5 +1,6 @@
 <script lang="ts">
   import "../../../app.pcss"
+  import Seo from "$lib/Seo.svelte"
   import { count } from "./stores.js"
   let countValue: number = 0
   count.subscribe((n) => (countValue = n))
@@ -40,6 +41,10 @@
     count.set(0)
   }
 </script>
+
+<!-- Draft, not linked from /projects yet: noindex keeps it out of search,
+     but a pasted link still unfurls with the house card. -->
+<Seo title="Hex Tile Fun" description="A bubble-wrap toy in hexagons — a *Space side project." noindex />
 
 <main class="h-lvh select-none p-0 text-white">
   <div class="text-2xl text-center p-3">

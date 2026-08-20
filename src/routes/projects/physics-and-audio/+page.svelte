@@ -1,5 +1,6 @@
 <script lang="ts">
   import { onMount } from "svelte"
+  import Seo from "$lib/Seo.svelte"
   import * as CANNON from "cannon-es"
   import * as PE from "svelte-cannon"
   import * as THREE from "three"
@@ -24,6 +25,10 @@
     }, 100) // play for 100ms
   }
 </script>
+
+<!-- Draft, not linked from /projects yet: noindex keeps it out of search,
+     but a pasted link still unfurls with the house card. -->
+<Seo title="Physics and Audio" description="Playing sounds from 2D physics collisions with the Web Audio API — a *Space side project." noindex />
 
 <a href="#" on:click={playCNote}>Play C Note</a>
 

@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512" role="img" aria-label="*Space">
+  <title>*Space</title>
+  <!--
+    The *Space mark, flattened for a tab strip. The site's own logo
+    (src/lib/images/ai starspace logo transparent bg.png) is a carved-wood
+    render — its texture, bevels and hairline grooves all disappear below about
+    64px, so the favicon keeps only the geometry and two flat bronzes sampled
+    off it. favicon.png stays alongside for browsers that ignore SVG icons.
+  -->
+  <path d="M256,46 L312,201 L477,206 L347,308 L392,466 L256,373 L120,466 L165,308 L35,206 L200,201 Z"
+        fill="#D69153"/>
+  <path d="M256,92 L351,378 L161,378 Z" fill="#492415"/>
+</svg>
