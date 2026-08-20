@@ -16,4 +16,18 @@
   :root.dark {
     color-scheme: dark;
   }
+
+  /* The site leans on motion — the mark bounces and spins on hover, the title
+     cross-fades over a second, project cards lift and their screenshots scale.
+     For anyone who has asked their system for less of that, hold still. */
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
 }

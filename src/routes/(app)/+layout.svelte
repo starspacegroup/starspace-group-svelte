@@ -6,7 +6,7 @@
 </script>
 
 <main
-  class="min-h-screen text-center bg-zinc-300 text-zinc-900 dark:bg-zinc-950 dark:text-zinc-200 relative overflow-hidden select-none"
+  class="min-h-screen text-center bg-zinc-300 text-zinc-900 dark:bg-zinc-950 dark:text-zinc-200 relative overflow-hidden"
 >
   <div class="z-30 relative">
     <Navigation />
