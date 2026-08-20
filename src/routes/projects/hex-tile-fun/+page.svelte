@@ -2,8 +2,6 @@
   import "../../../app.pcss"
   import Seo from "$lib/Seo.svelte"
   import { count } from "./stores.js"
-  let countValue: number = 0
-  count.subscribe((n) => (countValue = n))
 
   const startNum = 12 * 140
   const starter = Array.from(Array(startNum).keys())
@@ -14,9 +12,6 @@
     isPopped[i] = false
   }
 
-  let m = { x: 0, y: 0 }
-  let relM = [{ x: 0, y: 0 }]
-
   function pop(i: number) {
     // console.log(JSON.stringify(event.target))
     // elements.pop(i)
@@ -24,16 +19,6 @@
       isPopped[i] = true
       count.update((n) => n + 1)
     }
-  }
-
-  function handleMousemove(event: MouseEvent, id: number) {
-    m.x = event.clientX
-    m.y = event.clientY
-    // const rectM = event.target?.getBoundingClientRect()
-    // relM[id] = {
-    //   x: event.clientX - rectM.x,
-    //   y: event.clientY - rectM.y,
-    // }
   }
 
   function reset() {
@@ -48,7 +33,7 @@
 
 <main class="h-lvh select-none p-0 text-white">
   <div class="text-2xl text-center p-3">
-    Counter: {countValue}
+    Counter: {$count}
     <button on:click={reset} class="rounded-xl bg-red-800 p-3">Reset</button>
   </div>
   <div class="main">

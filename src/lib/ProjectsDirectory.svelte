@@ -2,9 +2,19 @@
   import { Button, Card } from "flowbite-svelte"
   import { ArrowUpRightFromSquareOutline } from "flowbite-svelte-icons"
   import { Badge } from "flowbite-svelte"
-  import { get } from "svelte/store"
+  import type { Tag } from "$lib/types"
 
-  const projects = [
+  type Project = {
+    name: string
+    description: string
+    url: string
+    external?: boolean
+    logo?: string
+    screenshot?: string
+    tags?: Tag[]
+  }
+
+  const projects: Project[] = [
     // {
     //   name: "Physics and Audio",
     //   description:
@@ -134,7 +144,7 @@
         <h5
           class="mb-7 text-3xl font-bold tracking-tight text-gray-900 dark:text-white"
         >
-          <a href={project.url} class="flex space-x-2" target="_blank">
+          <a href={project.url} class="flex space-x-2" target="_blank" rel="noopener noreferrer">
             {#if project.logo}
               <img src={project.logo} class="w-10" alt="{project.name} logo" />
             {/if}
@@ -157,6 +167,7 @@
           <Button
             href={project.url}
             target={project.external ? "_blank" : ""}
+            rel={project.external ? "noopener noreferrer" : undefined}
             class="gap-2 text-xl"
             >Check it Out! {#if project.external}
               <ArrowUpRightFromSquareOutline />
