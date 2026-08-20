@@ -30,7 +30,7 @@
      but a pasted link still unfurls with the house card. -->
 <Seo title="Physics and Audio" description="Playing sounds from 2D physics collisions with the Web Audio API — a *Space side project." noindex />
 
-<a href="#" on:click={playCNote}>Play C Note</a>
+<button on:click={playCNote}>Play C Note</button>
 
 <PE.World gravity={[0, -9.81, 0]}>
   <PE.Body mass={1} bind:position>

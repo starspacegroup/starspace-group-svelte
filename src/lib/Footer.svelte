@@ -1,5 +1,5 @@
 <script lang="ts">
-  export let giveClasses
+  export let giveClasses: string = ""
   import SocialIcons from "./SocialIcons.svelte"
 
   const year = new Date().getFullYear()
