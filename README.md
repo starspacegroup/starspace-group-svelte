@@ -1,20 +1,33 @@
 # The SvelteKit project for https://starspace.group
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/main/packages/create-svelte).
+The *Space site: the front page with its live Discord member count,
+`/projects`, and `/sister-spaces`. SvelteKit and Tailwind (via
+flowbite-svelte), deployed to Cloudflare Pages through `adapter-cloudflare`.
 
 ## Developing
 
-- Fork repo to your account
-- Clone your fork of the repo
-- Copy .env-example to .env
-- Install dependencies with `yarn install`, start a development server:
+- Fork the repo to your account, and clone your fork
+- `npm install`
+- `npm run dev`, or `npm run dev -- --open` to open a browser with it
 
-```bash
-npm run dev
+There is no `.env` step: the site reads no environment variables at all. The
+only external call it makes is to Discord's public invite endpoint, from the
+browser, for the member count on the front page.
 
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
+## Scripts
+
+- `npm run check` — svelte-check. It reports **0 errors and 0 warnings**; keep
+  it that way, because a check with known noise in it is a check nobody reads.
+- `npm run build` — production build into `.svelte-kit/cloudflare`
+- `npm run preview` — build, then serve it through `wrangler pages dev`
+- `npm run deploy` — build, then `wrangler pages deploy`
+
+One inconsistency to know about: `package.json` declares
+`"packageManager": "yarn@1.22.22"`, but the lockfile in git is
+`package-lock.json` and there is no `yarn.lock`. Use npm, which matches the
+lockfile. Whichever way that gets settled, it should be settled in one place —
+Cloudflare Pages reads that field when it picks a package manager for the
+build.
 
 ## Deploying
 
