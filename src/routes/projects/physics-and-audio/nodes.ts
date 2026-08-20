@@ -1,4 +1,6 @@
-export const nodeToIndex = (node) => {
+// Note-name -> frequency table for the physics/audio experiment. Nothing
+// imports this module yet; it is the raw material for that draft page.
+export const nodeToIndex = (node: string) => {
   let result = 0
   nodes.forEach((n, i) => {
     if (n.node === node) {

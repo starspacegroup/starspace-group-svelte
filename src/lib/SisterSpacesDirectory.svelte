@@ -6,8 +6,20 @@
     GlobeOutline,
   } from "flowbite-svelte-icons"
   import { Badge } from "flowbite-svelte"
+  import type { Tag } from "$lib/types"
 
-  const sister_spaces = [
+  type SisterSpace = {
+    name: string
+    description: string
+    url: string
+    physical?: boolean
+    image_url: string
+    map_url: string
+    address: string
+    tags?: Tag[]
+  }
+
+  const sister_spaces: SisterSpace[] = [
     {
       name: "Arete.study",
       description:
@@ -41,17 +53,17 @@
           <h2
             class="mb-9 text-4xl font-bold tracking-tight text-gray-900 dark:text-white text-left"
           >
-            <a href={sister_space.url} target="_blank">{sister_space.name}</a>
+            <a href={sister_space.url} target="_blank" rel="noopener noreferrer">{sister_space.name}</a>
           </h2>
           <p class="flex gap-4 items-center text-2xl p-2">
             <GlobeOutline />
-            <a href={sister_space.url} target="_blank">{sister_space.url}</a>
+            <a href={sister_space.url} target="_blank" rel="noopener noreferrer">{sister_space.url}</a>
           </p>
           <p class="flex gap-4 items-center text-2xl p-2">
             <MapPinAltOutline />
             <a
               href={sister_space.map_url}
-              target="_blank"
+              target="_blank" rel="noopener noreferrer"
               class="dark:text-blue-400 text-blue-700 text-left"
               >{sister_space.address}</a
             >
