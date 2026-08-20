@@ -4,3 +4,16 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  /* The theme is the .dark class on <html> (set in app.html, toggled by the
+     nav), not the OS preference. Without this the UA picks its own scheme from
+     the OS, so on a dark-preferring machine the default text colour stayed
+     white while Tailwind painted the light background underneath it. */
+  :root {
+    color-scheme: light;
+  }
+  :root.dark {
+    color-scheme: dark;
+  }
+}

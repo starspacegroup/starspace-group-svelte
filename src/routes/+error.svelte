@@ -31,7 +31,7 @@
 </svelte:head>
 
 <main
-  class="min-h-screen text-center dark:bg-zinc-950 dark:text-zinc-200 bg-zinc-300 relative overflow-hidden flex flex-col"
+  class="min-h-screen text-center bg-zinc-300 text-zinc-900 dark:bg-zinc-950 dark:text-zinc-200 relative overflow-hidden flex flex-col"
 >
   <div class="z-30 relative flex-1 flex flex-col justify-center p-8">
     <a href="/" class="block">
