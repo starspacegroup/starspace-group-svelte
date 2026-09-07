@@ -1,3 +1,14 @@
+# ⚠️ Retired — the *Space site has moved
+
+**This is the old repository, and it is archived.** The *Space website now
+lives at **[starspacegroup/website](https://github.com/starspacegroup/website)**,
+which is what builds and deploys <https://starspace.group>.
+
+Nothing here is deployed any more. This repo is kept read-only for history —
+open issues and pull requests against the new one.
+
+---
+
 # The SvelteKit project for https://starspace.group
 
 The *Space site: the front page with its live Discord member count,
